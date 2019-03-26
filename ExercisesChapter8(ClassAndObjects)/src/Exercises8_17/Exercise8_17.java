@@ -16,7 +16,38 @@ public class Exercise8_17 {
  */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		String[][] PlusArray = {{"+","+","+"},
+								{"+","+","+" },
+								{"+","+","+"}};
 		
+
+		
+		Scanner input = new Scanner(System.in); // declares a new input object.
+		
+		boolean turn = true;
+		
+		int i = 0;
+		while(i < 9) { // 9 es nueve turnos. i es el contador de jugadas.
+			
+			TicTacToe.PrintBoard(PlusArray);
+			System.out.println("Which position would you like to play?: ");
+			System.out.println("Insert Row: ");
+			int Rows = input.nextInt();
+			System.out.println("Insert Column: ");
+			int Column = input.nextInt();
+			
+			if(turn) {
+				PlusArray[Rows][Column] = "X";
+				turn = false;
+			}
+			else {
+				PlusArray[Rows][Column] = "O";
+				turn = true;
+			}
+			
+			i++;
+			
+		}
 	}
 
 }
