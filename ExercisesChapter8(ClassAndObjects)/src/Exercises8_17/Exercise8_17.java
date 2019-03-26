@@ -27,7 +27,7 @@ public class Exercise8_17 {
 		boolean turn = true;
 		
 		int i = 0;
-		while(i < 9) { // 9 es nueve turnos. i es el contador de jugadas.
+		while(i < 9) { // 9 Turns. i is the turn counter.
 			
 			TicTacToe.PrintBoard(PlusArray);
 			System.out.println("Which position would you like to play?: ");
